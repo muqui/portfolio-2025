@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:scss": "sass --watch sass/main.scss css/style.css",
+    "compile:scss": "sass sass/main.scss css/style.css",
     "prefix:css": "postcss css/style.css --use autoprefixer -o css/style.css",
     "compress:css": "sass css/style.css css/style.css --style=compressed",
     "build": "npm-run-all compile:scss prefix:css compress:css",
